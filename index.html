@@ -166,20 +166,26 @@ h1{
 
 .gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-top:20px;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin-top:25px;
+    justify-items:center;
 }
 
 .photo{
-    height:250px;
+    width:250px;
+    height:320px;
+    overflow:hidden;
     border-radius:20px;
     background:#ffd9e8;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    color:#9b5c74;
-    font-size:1rem;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
 }
 
 @media(max-width:768px){
