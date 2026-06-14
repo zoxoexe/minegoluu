@@ -380,6 +380,16 @@ setInterval(createHeart,400);
 
 </script>
 
+    <audio id="bgMusic" loop>
+    <source src="he said.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+document.addEventListener("click", function () {
+    document.getElementById("bgMusic").play();
+}, { once: true });
+</script>
+    
 </body>
 </html>
 ```
